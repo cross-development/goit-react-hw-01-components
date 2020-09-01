@@ -6,15 +6,13 @@ import FriendListItem from '../FriendListItem/FriendListItem';
 //Styles
 import styles from './FriendList.module.css';
 
-const FriendList = ({ friends }) => {
-	return (
-		<ul className={styles.friendList}>
-			{friends.map(({ avatar, name, isOnline, id }) => (
-				<FriendListItem avatar={avatar} name={name} isOnline={isOnline} key={id} />
-			))}
-		</ul>
-	);
-};
+const FriendList = ({ friends }) => (
+	<ul className={styles.friendList}>
+		{friends.map(({ avatar, name, isOnline, id }) => (
+			<FriendListItem avatar={avatar} name={name} isOnline={isOnline} key={id} />
+		))}
+	</ul>
+);
 
 FriendList.propTypes = {
 	friends: PropTypes.arrayOf(
