@@ -1,11 +1,11 @@
 //Core
 import React from 'react';
 //Components
-import Section from './Section';
-import Profile from './Profile';
-import Statistics from './Statistics';
-import FriendList from './FriendList';
-import TransactionHistory from './TransactionHistory';
+import Section from '../Section';
+import Profile from '../Profile';
+import Statistics from '../Statistics';
+import FriendList from '../FriendList';
+import TransactionHistory from '../TransactionHistory';
 //Data
 import user from 'json/user.json';
 import friends from 'json/friends.json';
